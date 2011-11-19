@@ -1,23 +1,23 @@
 # Django settings for universitytimetable project.
 
+try:
+    try:
+        import local_settings
+    except ImportError:
+        from universitytimetable import local_settings
+except ImportError:
+    print '[!] Create local_settings.py with env-specific settings'
+    raise
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
-)
+ADMINS = local_settings.ADMINS
 
 MANAGERS = ADMINS
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-    }
+    'default': local_settings.default_db
 }
 
 # Local time zone for this installation. Choices can be found here:
@@ -83,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '^wi0pmn4mk*^v7e^yi^0n28ply7i#fv380ztyug9^tx5xyq2c9'
+SECRET_KEY = local_settings.SECRET_KEY
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
