@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+ <object pk="1" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">6.020101</field>
+  <field type="CharField" name="name">Культурологія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="2" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">6.020301</field>
+  <field type="CharField" name="name">Філософія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="3" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">6.020302</field>
+  <field type="CharField" name="name">Історія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="4" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">6.020303</field>
+  <field type="CharField" name="name">Філологія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="5" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">2</field>
+  <field type="CharField" name="code">6.030501</field>
+  <field type="CharField" name="name">Економічна теорія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="6" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">2</field>
+  <field type="CharField" name="code">6.030507</field>
+  <field type="CharField" name="name">Маркетинг</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="7" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">2</field>
+  <field type="CharField" name="code">6.030508</field>
+  <field type="CharField" name="name">Фінанси і кредит</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="8" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">3</field>
+  <field type="CharField" name="code">6.040301</field>
+  <field type="CharField" name="name">Прикладна математика</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="9" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">3</field>
+  <field type="CharField" name="code">6.050103</field>
+  <field type="CharField" name="name">Програмна інженерія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="10" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">4</field>
+  <field type="CharField" name="code">6.030401</field>
+  <field type="CharField" name="name">Право</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="11" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">6.040101</field>
+  <field type="CharField" name="name">Хімія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="12" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">6.040102</field>
+  <field type="CharField" name="name">Біологія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="13" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">6.040106</field>
+  <field type="CharField" name="name">Екологія, охорона навколишнього середовища та збалансоване природокористування</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="14" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">6.040203</field>
+  <field type="CharField" name="name">Фізика</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="15" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">6.030101</field>
+  <field type="CharField" name="name">Соціологія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="16" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">6.030104</field>
+  <field type="CharField" name="name">Політологія</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="17" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">6.130102</field>
+  <field type="CharField" name="name">Соціальна робота</field>
+  <field type="CharField" name="kind">бакалавр</field>
+ </object>
+ <object pk="18" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">4</field>
+  <field type="CharField" name="code">7.03040201</field>
+  <field type="CharField" name="name">Правознавство</field>
+  <field type="CharField" name="kind">спеціаліст</field>
+ </object>
+ <object pk="19" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">3</field>
+  <field type="CharField" name="code">7.05010101</field>
+  <field type="CharField" name="name">Інформаційні управляючі системи та технології</field>
+  <field type="CharField" name="kind">спеціаліст</field>
+ </object>
+ <object pk="20" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">8.02010101</field>
+  <field type="CharField" name="name">Культурологія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="21" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">8.02030101</field>
+  <field type="CharField" name="name">Філософія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="22" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">8.02030201</field>
+  <field type="CharField" name="name">Історія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="23" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">8.02030201</field>
+  <field type="CharField" name="name">Історія. Археологія та давня історія України</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="24" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">8.02030307</field>
+  <field type="CharField" name="name">Філологія. Теорія, історія літератури та компаративістика</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="25" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">1</field>
+  <field type="CharField" name="code">8.02030307</field>
+  <field type="CharField" name="name">Філологія. Теорія, історія мови та компаративістика</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="26" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">2</field>
+  <field type="CharField" name="code">8.03050101</field>
+  <field type="CharField" name="name">Економічна теорія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="27" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">2</field>
+  <field type="CharField" name="code">8.03050801</field>
+  <field type="CharField" name="name">Фінанси і кредит</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="28" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">3</field>
+  <field type="CharField" name="code">8.04030302</field>
+  <field type="CharField" name="name">Системи і методи прийняття рішень</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="29" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">3</field>
+  <field type="CharField" name="code">8.05010101</field>
+  <field type="CharField" name="name">Інформаційні управляючі системи та технології</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="30" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">3</field>
+  <field type="CharField" name="code">8.05010203</field>
+  <field type="CharField" name="name">Програмне забезпечення систем</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="31" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">3</field>
+  <field type="CharField" name="code">8.04030101</field>
+  <field type="CharField" name="name">Прикладна математика</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="32" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">4</field>
+  <field type="CharField" name="code">8.03040201</field>
+  <field type="CharField" name="name">Правознавство</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="33" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">8.04010101</field>
+  <field type="CharField" name="name">Хімія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="34" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">8.04010201</field>
+  <field type="CharField" name="name">Біологія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="35" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">8.04010601</field>
+  <field type="CharField" name="name">Екологія та охорона навколишнього середовища</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="36" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">5</field>
+  <field type="CharField" name="code">8.04020301</field>
+  <field type="CharField" name="name">Фізика</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="37" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">8.03010101</field>
+  <field type="CharField" name="name">Соціологія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="38" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">8.03010101</field>
+  <field type="CharField" name="name">Політологія</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="39" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">8.03030101</field>
+  <field type="CharField" name="name">Журналістика</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="40" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">8.03060101</field>
+  <field type="CharField" name="name">Менеджмент організацій і адміністрування (в охороні здоров’я)</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="41" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">8.03060101</field>
+  <field type="CharField" name="name">Менеджмент організацій і адміністрування. (Менеджмент зв’язків з громадськістю)</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+ <object pk="42" model="org.major">
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel">6</field>
+  <field type="CharField" name="code">8.13010201</field>
+  <field type="CharField" name="name">Соціальна робота</field>
+  <field type="CharField" name="kind">маґістр</field>
+ </object>
+</django-objects>
