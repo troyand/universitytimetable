@@ -1,9 +1,20 @@
 from django.db import models
 
+class UniversityManager(models.Manager):
+    def get_by_natural_key(self, abbr):
+        return self.objects.get(abbr=abbr)
+
 
 class University(models.Model):
+    objects = UniversityManager()
+
     name = models.CharField(max_length=255, unique=True)
     abbr = models.CharField(max_length=16, unique=True)
+
+    def natural_key(self):
+        return (
+                self.abbr,
+                )
 
     def __unicode__(self):
         return u'%s' % (
@@ -11,7 +22,19 @@ class University(models.Model):
                 )
 
 
+class FacultyManager(models.Manager):
+    def get_by_natural_key(self, university_abbr, abbr):
+        return self.objects.get(
+                university=University.objects.get_by_natural_key(
+                    university_abbr
+                    ),
+                abbr=abbr
+                )
+
+
 class Faculty(models.Model):
+    objects = FacultyManager()
+
     university = models.ForeignKey(University)
     name = models.CharField(max_length=255)
     abbr = models.CharField(max_length=16)
@@ -20,6 +43,12 @@ class Faculty(models.Model):
         unique_together = (
                 ('university', 'name'),
                 ('university', 'abbr'),
+                )
+
+    def natural_key(self):
+        return (
+                self.university.abbr,
+                self.abbr,
                 )
 
     def __unicode__(self):
