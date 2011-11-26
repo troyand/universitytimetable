@@ -2,7 +2,7 @@ from django.db import models
 
 class UniversityManager(models.Manager):
     def get_by_natural_key(self, abbr):
-        return self.objects.get(abbr=abbr)
+        return self.get(abbr=abbr)
 
 
 class University(models.Model):
@@ -24,7 +24,7 @@ class University(models.Model):
 
 class FacultyManager(models.Manager):
     def get_by_natural_key(self, university_abbr, abbr):
-        return self.objects.get(
+        return self.get(
                 university=University.objects.get_by_natural_key(
                     university_abbr
                     ),
