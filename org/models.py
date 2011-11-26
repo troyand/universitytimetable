@@ -27,3 +27,20 @@ class Faculty(models.Model):
                 self.university.abbr,
                 self.abbr,
                 )
+
+
+class Major(models.Model):
+    faculty = models.ForeignKey(Faculty)
+    code = models.CharField(max_length=64)
+    name = models.CharField(max_length=255)
+    kind = models.CharField(max_length=16)
+
+    class Meta:
+        unique_together = ('faculty', 'name', 'kind')
+
+    def __unicode__(self):
+        return u'%s - %s' % (
+                self.code,
+                self.name,
+                )
+
