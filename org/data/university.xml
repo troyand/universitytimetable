@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+ <object pk="1" model="org.university">
+  <field type="CharField" name="name">Національний університет «Києво-Могилянська академія»</field>
+  <field type="CharField" name="abbr">НаУКМА</field>
+ </object>
+</django-objects>
