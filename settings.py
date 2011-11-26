@@ -121,7 +121,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'south',
     # timetable-specific applications
-    'org',
+    'universitytimetable.org',
 )
 
 # A sample logging configuration. The only tangible logging
