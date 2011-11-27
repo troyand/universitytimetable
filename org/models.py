@@ -100,6 +100,17 @@ class Department(models.Model):
             raise ValidationError(
                     'Only one of the following should be defined: university or faculty'
                     )
+        else: # pragma: no cover
+            pass # this should never happen
+
+    def save(self, *args, **kwargs):
+        from django.core.exceptions import ValidationError
+        from django.db import IntegrityError
+        try:
+            self.clean()
+        except ValidationError, e:
+            raise IntegrityError(e.messages[0])
+        super(Department, self).save(*args, **kwargs)
 
     def __unicode__(self):
         return self.name
