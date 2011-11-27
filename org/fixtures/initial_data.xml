@@ -286,4 +286,134 @@
   <field type="CharField" name="name">Соціальна робота</field>
   <field type="CharField" name="kind">маґістр</field>
  </object>
+ <object pk="1" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФГН</natural></field>
+  <field type="CharField" name="name">Кафедра історії</field>
+ </object>
+ <object pk="2" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФГН</natural></field>
+  <field type="CharField" name="name">Кафедра української мови</field>
+ </object>
+ <object pk="3" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФГН</natural></field>
+  <field type="CharField" name="name">Кафедра літератури та іноземних мов</field>
+ </object>
+ <object pk="4" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФГН</natural></field>
+  <field type="CharField" name="name">Кафедра загального та слов’янського мовознавства</field>
+ </object>
+ <object pk="5" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФГН</natural></field>
+  <field type="CharField" name="name">Кафедра філософії</field>
+ </object>
+ <object pk="6" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФГН</natural></field>
+  <field type="CharField" name="name">Кафедра культурології</field>
+ </object>
+ <object pk="7" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФЕН</natural></field>
+  <field type="CharField" name="name">Кафедра економічної теорії</field>
+ </object>
+ <object pk="8" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФЕН</natural></field>
+  <field type="CharField" name="name">Кафедра маркетингу та управління бізнесом</field>
+ </object>
+ <object pk="9" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФЕН</natural></field>
+  <field type="CharField" name="name">Кафедра фінансів</field>
+ </object>
+ <object pk="10" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФІ</natural></field>
+  <field type="CharField" name="name">Кафедра інформатики</field>
+ </object>
+ <object pk="11" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФІ</natural></field>
+  <field type="CharField" name="name">Кафедра мультимедійних систем</field>
+ </object>
+ <object pk="12" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФІ</natural></field>
+  <field type="CharField" name="name">Кафедра математики</field>
+ </object>
+ <object pk="13" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФІ</natural></field>
+  <field type="CharField" name="name">Кафедра мережних технологій</field>
+ </object>
+ <object pk="14" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФПвН</natural></field>
+  <field type="CharField" name="name">Кафедра міжнародного права і спеціальних правових наук</field>
+ </object>
+ <object pk="15" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФПвН</natural></field>
+  <field type="CharField" name="name">Кафедра галузевих правових наук</field>
+ </object>
+ <object pk="16" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФПвН</natural></field>
+  <field type="CharField" name="name">Кафедра державно-правових наук</field>
+ </object>
+ <object pk="17" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФПрН</natural></field>
+  <field type="CharField" name="name">Кафедра хімії</field>
+ </object>
+ <object pk="18" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФПрН</natural></field>
+  <field type="CharField" name="name">Кафедра біології</field>
+ </object>
+ <object pk="19" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФПрН</natural></field>
+  <field type="CharField" name="name">Кафедра фізико-математичних наук</field>
+ </object>
+ <object pk="20" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФПрН</natural></field>
+  <field type="CharField" name="name">Кафедра екології</field>
+ </object>
+ <object pk="21" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФСНСТ</natural></field>
+  <field type="CharField" name="name">Школа соціальної роботи ім. професора Володимира Полтавця</field>
+ </object>
+ <object pk="22" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФСНСТ</natural></field>
+  <field type="CharField" name="name">Кафедра теорії і методики зв’язків із громадськістю</field>
+ </object>
+ <object pk="23" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФСНСТ</natural></field>
+  <field type="CharField" name="name">Кафедра соціології</field>
+ </object>
+ <object pk="24" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФСНСТ</natural></field>
+  <field type="CharField" name="name">Школа охорони здоров’я</field>
+ </object>
+ <object pk="25" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФСНСТ</natural></field>
+  <field type="CharField" name="name">Кафедра політології</field>
+ </object>
+ <object pk="26" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><None></None></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФСНСТ</natural></field>
+  <field type="CharField" name="name">Кафедра журналістики</field>
+ </object>
 </django-objects>
