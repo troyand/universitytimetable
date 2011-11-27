@@ -91,3 +91,71 @@ class MajorTest(TestCase):
         m.delete()
         f.delete()
         u.delete()
+
+
+class DepartmentTest(TestCase):
+    def setUp(self):
+        u = University.objects.create(
+                name=u'Київський національний університет культури і мистецтв',
+                abbr=u'КНУКіМ',
+                )
+        f = Faculty.objects.create(
+                university=u,
+                name=u'Факультет індустрії моди',
+                abbr=u'ФІМ',
+                )
+
+    def test_unicode(self):
+        f = Faculty.objects.get(abbr=u'ФІМ')
+        d = Department.objects.create(
+                university=None,
+                faculty=f,
+                name=u'Кафедра модного вироку',
+                )
+        self.assertEqual(
+                u'%s' % d,
+                u'Кафедра модного вироку'
+                )
+
+    def test_validation_fail1(self):
+        from django.db import IntegrityError
+        with self.assertRaises(IntegrityError):
+            d = Department.objects.create(
+                    university=None,
+                    faculty=None,
+                    name=u'Кафедра модного вироку',
+                    )
+
+    def test_validation_fail2(self):
+        from django.db import IntegrityError
+        with self.assertRaises(IntegrityError):
+            f = Faculty.objects.get(abbr=u'ФІМ')
+            d = Department.objects.create(
+                    university=f.university,
+                    faculty=f,
+                    name=u'Кафедра модного вироку',
+                    )
+
+    def test_validation_success1(self):
+        f = Faculty.objects.get(abbr=u'ФІМ')
+        d = Department.objects.create(
+                university=None,
+                faculty=f,
+                name=u'Кафедра модного вироку',
+                )
+        d.delete()
+
+    def test_validation_success2(self):
+        u = University.objects.get(abbr=u'КНУКіМ')
+        d = Department.objects.create(
+                university=u,
+                faculty=None,
+                name=u'Кафедра модного вироку',
+                )
+        d.delete()
+
+    def tearDown(self):
+        u = University.objects.get(abbr=u'КНУКіМ')
+        f = Faculty.objects.get(abbr=u'ФІМ')
+        f.delete()
+        u.delete()
