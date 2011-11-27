@@ -416,4 +416,14 @@
   <field to="org.faculty" name="faculty" rel="ManyToOneRel"><natural>НаУКМА</natural><natural>ФСНСТ</natural></field>
   <field type="CharField" name="name">Кафедра журналістики</field>
  </object>
+ <object pk="27" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><None></None></field>
+  <field type="CharField" name="name">Загальноуніверситетська кафедра англійської мови</field>
+ </object>
+ <object pk="28" model="org.department">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field to="org.faculty" name="faculty" rel="ManyToOneRel"><None></None></field>
+  <field type="CharField" name="name">Загальноуніверситетська кафедра фізичного виховання</field>
+ </object>
 </django-objects>
