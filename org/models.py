@@ -73,3 +73,33 @@ class Major(models.Model):
                 self.name,
                 )
 
+
+class Department(models.Model):
+    university = models.ForeignKey(University, null=True, blank=True)
+    faculty = models.ForeignKey(Faculty, null=True, blank=True)
+    name = models.CharField(max_length=255)
+
+    class Meta:
+        unique_together = ('university', 'faculty', 'name')
+
+    def clean(self):
+        from django.core.exceptions import ValidationError
+        # Department should have either university not Null
+        # or faculty not Null, not both.
+        # In first case the department is university-wide,
+        # in the second it is faculty-related
+        if self.university is None and self.faculty is not None:
+            pass
+        elif self.university is not None and self.faculty is None:
+            pass
+        elif self.university is None and self.faculty is None:
+            raise ValidationError(
+                    'Either university or faculty should be defined'
+                    )
+        elif self.university is not None and self.faculty is not None:
+            raise ValidationError(
+                    'Only one of the following should be defined: university or faculty'
+                    )
+
+    def __unicode__(self):
+        return self.name
