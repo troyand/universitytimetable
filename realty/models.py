@@ -13,16 +13,9 @@ class Building(models.Model):
         unique_together = ('university', 'number', 'label')
 
     def __unicode__(self):
+        parts = [self.university.abbr]
         if self.number:
-            number_part = u'Корпус №%d' % self.number
-        else:
-            number_part = u''
+            parts.append(u'Корпус №%d' % self.number)
         if self.label:
-            label_part = self.label
-        else:
-            label_part = u''
-        return u' - '.join([
-                self.university.abbr,
-                number_part,
-                label_part,
-                ])
+            parts.append(self.label)
+        return u' - '.join(parts)
