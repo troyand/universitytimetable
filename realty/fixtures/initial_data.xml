@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+ <object pk="1" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">1</field>
+  <field type="CharField" name="label"></field>
+  <field type="CharField" name="address">вул. Іллінська, 4</field>
+ </object>
+ <object pk="2" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">2</field>
+  <field type="CharField" name="label"></field>
+  <field type="CharField" name="address">вул. Іллінська, 4А</field>
+ </object>
+ <object pk="3" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">3</field>
+  <field type="CharField" name="label"></field>
+  <field type="CharField" name="address"></field>
+ </object>
+ <object pk="4" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">4</field>
+  <field type="CharField" name="label"></field>
+  <field type="CharField" name="address">вул. Волоська, 9</field>
+ </object>
+ <object pk="5" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">5</field>
+  <field type="CharField" name="label"></field>
+  <field type="CharField" name="address">вул. Волоська, 8/5</field>
+ </object>
+ <object pk="6" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">6</field>
+  <field type="CharField" name="label"></field>
+  <field type="CharField" name="address">вул. Волоська, 10</field>
+ </object>
+ <object pk="7" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">7</field>
+  <field type="CharField" name="label">British Council, Goethe Institut</field>
+  <field type="CharField" name="address">вул. Волоська, 12/4</field>
+ </object>
+ <object pk="8" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">8</field>
+  <field type="CharField" name="label"></field>
+  <field type="CharField" name="address">вул. Сковороди, 14</field>
+ </object>
+ <object pk="9" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">9</field>
+  <field type="CharField" name="label">Бурса</field>
+  <field type="CharField" name="address">вул. Набережно-Хрещатицька, 27</field>
+ </object>
+ <object pk="10" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number">10</field>
+  <field type="CharField" name="label">Бібліотека Антоновичів</field>
+  <field type="CharField" name="address">вул. Сковороди, 4</field>
+ </object>
+ <object pk="11" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number"><None></None></field>
+  <field type="CharField" name="label">Староакадемічний корпус</field>
+  <field type="CharField" name="address">вул. Сковороди, 2</field>
+ </object>
+ <object pk="12" model="realty.building">
+  <field to="org.university" name="university" rel="ManyToOneRel"><natural>НаУКМА</natural></field>
+  <field type="IntegerField" name="number"><None></None></field>
+  <field type="CharField" name="label">Культурно-мистецький центр</field>
+  <field type="CharField" name="address">вул. Іллінська, 9</field>
+ </object>
+</django-objects>
