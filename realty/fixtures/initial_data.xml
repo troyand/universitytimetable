@@ -72,4 +72,352 @@
   <field type="CharField" name="label">Культурно-мистецький центр</field>
   <field type="CharField" name="address">вул. Іллінська, 9</field>
  </object>
+ <object pk="1" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">112</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="2" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">118</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="3" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">121</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="4" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">206</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="5" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">208</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="6" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">217</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="7" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">223</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="8" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">225</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="9" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">227</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="10" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">306</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="11" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">307</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="12" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">309</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="13" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">311</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="14" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">313</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="15" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">318</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="16" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">1</field>
+  <field type="IntegerField" name="number">331</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="17" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">2</field>
+  <field type="IntegerField" name="number">204</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="18" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">2</field>
+  <field type="IntegerField" name="number">214</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="19" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">2</field>
+  <field type="IntegerField" name="number">402</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="20" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">2</field>
+  <field type="IntegerField" name="number">405</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="21" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">2</field>
+  <field type="IntegerField" name="number">406</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="22" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">2</field>
+  <field type="IntegerField" name="number">408</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="23" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">205</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="24" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">220</field>
+  <field type="CharField" name="label">а</field>
+  <field type="IntegerField" name="floor">2</field>
+ </object>
+ <object pk="25" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">301</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="26" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">302</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="27" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">305</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="28" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">403</field>
+  <field type="CharField" name="label">б</field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="29" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">405</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="30" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">3</field>
+  <field type="IntegerField" name="number">407</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="31" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">100</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="32" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">101</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="33" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">303</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="34" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">307</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="35" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">308</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="36" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">312</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="37" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">315</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="38" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">317</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="39" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">319</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="40" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">320</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="41" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">321</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="42" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">4</field>
+  <field type="IntegerField" name="number">425</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">4</field>
+ </object>
+ <object pk="43" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">6</field>
+  <field type="IntegerField" name="number">301</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="44" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">6</field>
+  <field type="IntegerField" name="number">306</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="45" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">6</field>
+  <field type="IntegerField" name="number">307</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">3</field>
+ </object>
+ <object pk="46" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">8</field>
+  <field type="IntegerField" name="number">12</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="47" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">8</field>
+  <field type="IntegerField" name="number">13</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="48" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">8</field>
+  <field type="IntegerField" name="number">7</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="49" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">8</field>
+  <field type="IntegerField" name="number">8</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="50" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">8</field>
+  <field type="IntegerField" name="number">9</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="51" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">17</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="52" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">24</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="53" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">29</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="54" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">30</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="55" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">32</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="56" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">33</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="57" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">8</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
+ <object pk="58" model="realty.room">
+  <field to="realty.building" name="building" rel="ManyToOneRel">9</field>
+  <field type="IntegerField" name="number">9</field>
+  <field type="CharField" name="label"></field>
+  <field type="IntegerField" name="floor">1</field>
+ </object>
 </django-objects>
