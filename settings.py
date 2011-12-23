@@ -122,6 +122,7 @@ INSTALLED_APPS = (
     'south',
     # timetable-specific applications
     'universitytimetable.org',
+    'universitytimetable.people',
     'universitytimetable.realty',
 )
 
